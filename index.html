@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio Cuffaro | Portfolio</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="img/foto perfil.jpeg" sizes="32x32" type="image/png" />
+    <link rel="icon" href="img/foto perfil.jpeg" sizes="16x16" type="image/png" />
+
+    <!-- Descripción general -->
+    <meta name="description" content="Fabio Cuffaro Camara Potfolio, Software Developer." />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fabio Cuffaro | Portfolio" />
+    <meta property="og:description" content="Software Developer + Marketing Specialist" />
+    <meta property="og:image" content="img/portfolioWeb" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Fabio Cuffaro Camara Developer" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+
+    <nav class="navbar">
+
+        <a href="#" class="navbar__logo">
+            <i class="ri-code-ai-line"></i>
+            DevCuxa</a>
+
+        <div class="navbar__menu">
+            <a href="#skills" class="navbar__link">Habilidades</a>
+            <a href="#projects" class="navbar__link">Proyectos</a>
+            <a href="#career" class="navbar__link">Experiencia</a>
+            <a href="#about" class="navbar__link">Tecnologias</a>
+        </div>
+
+        <button id="hamburger" class="navbar__hamburger" aria-label="Abrir menú">
+            <i class="ri-menu-line"></i>
+        </button>
+
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>Granada, España</h5>
+                <div id="clock" class="clock"></div>
+            </div>
+            
+            <a href="https://www.linkedin.com/in/fabiomcc" target="_blank">
+                <button class="btn">Contacto</button>
+            </a>
+            
+            <button id="theme-toggle" class="btn">🌙</button>
+        </div>
+
+    </nav>
+
+    <!--HEROO-->
+
+    <section class="hero">
+
+        <div class="hero-inside">
+
+            <div class="hero__content">
+                <img src="img/foto perfil.jpeg" alt="Foto de perfil" class="hero__img">
+                <h2>Hola! Soy <br> <span>Fabio Cuffaro</span></h2>
+            </div>
+
+            <div class="hero__intro">
+                <h3>Desarrollador Junior</h3>
+                <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma y apasionado la tecnología, el diseño y la programación moderna.</p>
+                <a href="https://www.linkedin.com/in/fabiomcc" target="_blank">
+                    <button class="btn">Trabaja conmigo</button>
+                </a>
+                <a href="#projects">
+                  <button class="btn--secondary">Ver Proyectos</button>  
+                </a>    
+                
+            </div>
+
+            <div class="hero__socials">
+                <a href="https://mail.google.com/mail/?view=cm&to=fabiomcc96@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+                <a href="https://github.com/FabioCuffaro" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/fabiomcc" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--SKILLS + GRID-->
+
+    <section class="skills" id="skills">
+
+        <div class="skills__description">
+            <h3>Antes de dedicarme a la programación he probado bastantes cosas...
+            </h3>
+            <p>Cada vez que he trabajado en algo he aprendido algo importante: A <i>reinventarme</i> 
+                <br><br>Me gradué en Marketing e Investigación de Mercados en 2019, tengo un master en Marketing Digital,
+                he trabajado representando a varias entidades, en varios idiomas y todas de distintos sectores.
+                Representé a una entidad social bancaria, catalogué toda una página web con fotos y productos para una óptica.
+                He ayudado a gente a encontrar la casa de sus sueños, he sido diseñador, gestor de redes sociales, negociador...
+
+                <br><br>
+                Conformarte no es la opción si quieres seguir avanzando en la vida. Por eso decidí subirme al barco del desarrollo.
+                Sigueme en LinkedIn y descubre mi trayectoria profesional:
+
+            </p>
+
+            <div class="skills__action">
+                <a href="https://mail.google.com/mail/?view=cm&to=fabiomcc96@gmail.com" target="_blank">
+                   <button class="btn">Trabaja conmigo</button>
+ 
+                </a>
+                <a href="#projects">
+                    <button class="btn--secondary">Ver Proyectos</button>
+                </a>
+                                
+            </div>
+
+        </div>
+
+        <!--SKILLS GRID STATS-->
+
+        <div class="skills__stats">
+
+            <!--PRIMERA LINEA DEL GRID-->
+
+            <i class="ri-codepen-line"></i>
+            <div class="skill-info">
+                <h3>4+</h3>
+                <p>Reinventado</p>
+            </div>
+
+            <i class="ri-reactjs-line"></i>
+            <div class="skill-info">
+                <h3>3+</h3>
+                <p>Idiomas</p>
+            </div>
+
+            <!--SEGUNDA LINEA-->
+
+            <div class="skill-info">
+                <h3>20+</h3>
+                <p>Proyectos en equipo</p>
+            </div>
+
+            <i class="ri-rocket-line"></i>
+            <div class="skill-info">
+                <h3>8+</h3>
+                <p>Habilidades</p>
+            </div>
+            <i class="ri-global-line"></i>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="showcase" id="projects">
+
+
+        <!-- SHOWCASE -->
+
+        <div class="showcase-categories">
+
+
+            <!-- PROJECTS CATEGORY-->
+            <section class="category">
+
+                <div class="category-header">
+
+                    <div class="category-title">
+                        <i class="ri-macbook-line"></i>
+                        <h4>PortFolio y proyectos Github</h4>
+                    </div>
+
+                </div>
+
+
+                <!--CATEGORY PROJECTS-->
+                <div class="category-projects">
+
+                    <div class="projects-card">
+                        <img src="img/portfolioWeb.jpeg" alt="Página Web Actual" class="projects-card-image">
+                        <div class="project-card-info">
+                            <h5>Web actual</h5>
+                            <p>Noviembre 2025</p>
+                        </div>
+                        <p class="project-card-description">Diseño limpio y profesional para mostrar proyectos
+                            personales.</p>
+                        <a href="#" target="_blank"><button class="btn">Github</button></a>
+                    </div>
+
+                    <div class="projects-card">
+                        <img src="img/calculadora básica.jpg" alt="Calculadora básica" class="projects-card-image">
+                        <div class="project-card-info">
+                            <h5>Calculadora</h5>
+                            <p>Marzo 2025</p>
+                        </div>
+                        <p class="project-card-description">Calculadora básica para aprender a posicionar elementos en
+                            un div y usar JavaScript básico para operaciones y mostrarlo por pantalla. Pruébala en Github Pages.</p>
+                        <a href="https://github.com/FabioCuffaro/Calculadora_Basica" target="_blank"><button class="btn">Github</button></a>
+                    </div>
+
+                    <div class="projects-card">
+                        <img src="img/Cuenta de Banco.jpg" alt="Backend Banco" class="projects-card-image">
+                        <div class="project-card-info">
+                            <h5>Backend Banco</h5>
+                            <p>Abril 2025</p>
+                        </div>
+                        <p class="project-card-description">Cuenta de Banco diseñada en Java.
+                            <br>
+                            Sólo Backend, no Frontend. Las clases principales son Cuenta de Banco y Cajero.
+                        </p>
+                        <a href="https://github.com/FabioCuffaro/Cuenta_Banco" target="_blank"><button class="btn">Github</button></a>
+                    </div>
+
+                    <div class="projects-card">
+                        <img src="img/cuentaBancoExt.png" alt="Banco Extended" class="projects-card-image4">
+                        <div class="project-card-info">
+                            <h5>Backend BancoExt</h5>
+                            <p>Abril 2025</p>
+                        </div>
+                        <p class="project-card-description">Extensión para contar los billetes a entregar al sacar
+                            dinero del Cajero. Muestra por pantalla mensaje porque no puede dar monedas, solo billetes.
+                        </p>
+                        <a href="https://github.com/FabioCuffaro/Cuenta_Banco_ext" target="_blank"><button class="btn">Github</button></a>
+                    </div>
+
+                    <div class="projects-card">
+                        <img src="img/Calculadora2.png" alt="Calculadora 2" class="projects-card-image">
+                        <div class="project-card-info">
+                            <h5>Calculadora 2</h5>
+                            <p>Marzo 2025</p>
+                        </div>
+                        <p class="project-card-description">Calculadora avanzada en CSS para aprender cómo se usa:
+                            linear-gradient, inset, active dentro y fuera para dar contornos y formas. Pruébala en Github Pages.</p>
+                        <button class="btn">Github</button>
+                    </div>
+                    
+                    <div class="projects-card">
+                        <img src="img/redsocial.png" alt="Trabajo Final de Grado" class="projects-card-image">
+                        <div class="project-card-info">
+                            <h5>Red Social - TFG</h5>
+                            <p>Marzo 2026</p>
+                        </div>
+                        <p class="project-card-description">Proyecto final de Grado, basado en una red social completa. Permisos JWT, token, seguidores, post, imágenes... En construcción 🔃🔃🔃
+                        </p>
+                        <a href="https://github.com/FabioCuffaro/Tfg_Dam" target="_blank"><button class="btn">Github</button></a>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+
+     <!-- CAREER -->
+
+    <section class="career" id="career">
+
+        <div class="career__jobs">
+            <h3>Experiencia Laboral</h3>
+            <div class="job">
+                <i class="ri-bar-chart-2-line"></i>
+                <div class="job__info">
+                    <h5>Analista de Datos - <span>Mercanza</span></h5>
+                    <p>Marzo 2026 - Present</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="ri-home-4-line"></i>
+                <div class="job__info">
+                    <h5>Oficial Administrativo - <span>Inmobiliaria Márquez</span></h5>
+                    <p>Octubre 2022 – Enero 2026</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="ri-seo-line"></i>
+                <div class="job__info">
+                    <h5>Departamento de Marketing - <span>Vipsual</span></h5>
+                    <p>Febrero 2021 – Julio 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="career__awards">
+            <h3>Certificados</h3>
+            <div class="award">
+                <div>
+                    <i class="ri-medal-fill"></i>
+                    <div class="award__info">
+                        <h5>AWS Academy - <span>Cloud Foundations</span></h5>
+                        <p>Febrero 2026</p>
+                    </div>
+                </div>
+            </div>
+            <div class="award">
+                <div>
+                    <i class="ri-macbook-line"></i>
+                    <div class="award__info">
+                        <h5>Mouredev Pro Cursos -  <span>Brais Moure</span></h5>
+                        <p>En el presente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="award">
+                <div>
+                    <i class="ri-award-fill"></i>
+                    <div class="award__info">
+                        <h5>Spring Boot/Java - <span>Bootcamp Nico Salgado</span></h5>
+                        <p>Agosto 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIES -->
+    <section class="about" id="about">
+
+        <div class="about__container">
+
+            <div class="about-text">
+                <h3>Tecnologías</h3>
+                
+                <p>He trabajado con varias tecnologias, pero aún sigo formándome:  <br><br>
+               HTML, CSS, JS, Java, Python, Git, DART, MYSQL, PostgreSQL, Kotlin, React...<br><br>
+                </p>
+
+                    <div class="tech">
+                            <i class="ri-html5-fill"></i>
+                            <i class="ri-css3-fill"></i>
+                            <i class="ri-javascript-fill"></i>
+                            <i class="ri-java-fill"></i>
+                            <i class="ri-braces-fill"></i>
+                            <i class="ri-git-merge-line"></i>
+                            <i class="ri-database-2-fill"></i>
+                            <i class="ri-android-line"></i>
+                            <i class="ri-reactjs-line"></i>
+                            <i class="ri-flutter-fill"></i>
+                     </div>
+
+                  <p class="final"> Actualmente centrado en aprender y mejorar en el uso de SpringBoot con Java para el entorno empresarial y trabjando con herramientas de análisis de datos. <br>
+
+                </p>
+                <br>
+                <div class="tech-images">
+                    <img src="img/pngaaa.com-2459546.png" class="spring">
+                    <img src="img/powerbi.png" class="powerbi">
+                    <img src="img/pngegg.png" class="qlik">
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="img/footer.jpg" alt="Foto Fabio" class="hero-image">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Fabio Cuffaro | Granada, España</p>
+
+    </footer>
+
+
+
+
+    <button id="topBtn" class="btn-floating" title="Volver arriba" onclick="topFunction()">
+        <img src="img/608336.png" alt="Subir" class="btn-floating__img">
+    </button>
+</body>
+<script src="script.js"></script>
+
+</html>

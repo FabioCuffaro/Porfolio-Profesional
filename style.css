@@ -1,0 +1,1450 @@
+/* ================================================================
+   ADAPTACIÓN DE CSS DOCUMENTO - PORTFOLIO FABIO CUFFARO
+   ================================================================ */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* ================================================================
+   LINKS + IMG + BOTONES - PORTFOLIO FABIO CUFFARO
+   ================================================================ */
+
+a {
+    text-decoration: none;
+    color: #5e6670;
+}
+
+h3 {
+    color: #1f2937;
+}
+
+
+img {
+    object-fit: cover;
+    /* que se vea siempre el contenedor completo, aunque tenga que cortar un trozo de la imagen */
+}
+
+
+.btn {
+    border: 2px solid #1f2937;
+    background-color: #1f2937;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    color: #1f2937;
+    background-color: #fff;
+    border-color: #e5e7eb;
+}
+
+.btn--secondary {
+    border: 2px solid #e5e7eb;
+    background-color: #fff;
+    color: #1e1e1e;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.btn--secondary:hover {
+    color: #fff;
+    background-color: #394555;
+    border-color: #1f2937;
+}
+
+
+
+/* ================================================================
+   BARRA DE NAVEGACIÓN - PORTFOLIO FABIO CUFFARO
+   ================================================================ */
+
+.navbar {
+    margin: 15px 20px;
+
+    border: 0.5px solid #c8cfd8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+
+/* LOGO + ACTION + LOCATION */
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 18px;
+}
+
+.navbar__logo i {
+    font-size: 50px;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 80px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navbar__menu a {
+    transition: all 0.3s ease;
+}
+
+.navbar__menu a:hover {
+    font-size: 25px;
+    color: #1f2a38;
+}
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar__location h5 {
+    font-size: 13px;
+    color: #5e6670;
+}
+
+.navbar__actions button {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar__actions button:hover {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/*RELOJ CON JAVASCRIPT*/
+
+.clock {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #000000;
+}
+
+
+
+
+
+
+/* =====================================
+   HEROOO - PORTFOLIO FABIO CUFFARO
+   ====================================== */
+
+.hero {
+    margin: 15px 20px;
+    border: 0.5px solid #c8cfd8;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+.hero-inside {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+/* Para que ocupasen el 50% de la pantalla cada una */
+.hero__intro,
+.hero__content {
+
+    width: 50%;
+}
+
+
+/* HEROOO IMG + NOMBRE */
+
+.hero__img {
+
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease;
+}
+
+.hero__img:hover {
+    transform: translateY(-2px);
+
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__content h2 {
+    color: #1f2937;
+    margin-top: 14px;
+    font-size: 60px;
+    line-height: 80px;
+    transition: all 0.3s ease;
+}
+
+.hero__content h2 span {
+    transition: all 0.3s ease;
+}
+
+.hero__content h2 span:hover {
+    color: #5e6670;
+}
+
+
+/* HEROOO INTRO */
+
+.hero__intro h3 {
+    font-size: 60px;
+    color: #1f2937;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.hero__intro h3:hover {
+    color: #5e6670;
+    transform: translateY(-3px);
+}
+
+
+.hero__intro p {
+    font-size: 20px;
+    color: #5e6670;
+}
+
+
+/* HEROOO BOTONES */
+
+
+.hero__intro button {
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* HEROOO SOCIAL */
+
+
+.hero__socials {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.hero__socials i {
+    border: 1px solid #c1c6cc;
+    border-radius: 18px;
+    padding: 3px;
+    transition: all 0.6s ease;
+    display: inline-block;
+    /*sino no funciona el transform*/
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.192);
+}
+
+.hero__socials i:hover {
+    transform: translateY(-5px);
+    background-color: #1f2937;
+    color: #fff;
+    border-color: #1f2937;
+
+}
+
+
+
+
+/* ============================================
+   HABILIDADES  - PORTFOLIO FABIO CUFFARO
+   ========================================= */
+
+.skills {
+
+    /*Seguimos estilo de caja*/
+    margin: 50px 20px;
+    border: 0.5px solid #c8cfd8;
+    border-radius: 12px;
+    padding: 30px 40px;
+
+    display: flex;
+    gap: 60px;
+}
+
+/* SKILLS DESCRIPTION */
+
+.skills__description,
+.skills__stats {
+
+    /*Para que cada uno ocupe el 50% de la pantalla*/
+    width: 50%;
+}
+
+
+.skills__description {
+    padding-right: 80px;
+}
+
+.skills__description i {
+    transition: all 0.3s ease;
+    color: #1f2a38;
+    font-weight: 500;
+}
+
+
+.skills__description h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.skills__description p {
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* SKILLS BOTONES*/
+
+.skills__description button {
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+/* SKILLS STATS distribución con grid con 1 frame*/
+
+.skills__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+/* SKILLS STATS i*/
+
+.skills__stats i {
+
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.skills__stats i:hover {
+    transform: translateY(-10px);
+}
+
+
+/* SKILLS STATS INFO*/
+
+.skill-info {
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skill-info h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.skill-info p {
+    text-align: center;
+    font-size: 19px;
+}
+
+
+
+/* ================================================================
+   PROYECTOS DE GITHUB - PORTFOLIO FABIO CUFFARO
+   ================================================================ */
+.showcase {
+    margin-top: 60px;
+    padding: 30px 60px 100px;
+    background: #e5e7eb;
+}
+
+
+/*PROJECTS HEADER*/
+
+.showcase-header {
+    padding-bottom: 30px;
+}
+
+.showcase-header h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+
+/*DISEÑO CABECERA CATEGORÍA*/
+
+.category-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/*Lo mismo de antes, separamos 50% cada clase*/
+.category-title {
+
+    display: flex;
+    align-items: center;
+}
+
+/*CATEGORY TITTLE*/
+
+.category-title {
+    margin: 20px;
+    gap: 20px;
+}
+
+.category-title h4 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.category-title i {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*DISTRIBUCIÓN DE TARJETAS + GAP*/
+
+
+.category-projects {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* O `space-between` según necesites */
+    gap: 30px;
+}
+
+
+/*DISEÑO DE TARJETAS*/
+
+.projects-card {
+    position: relative;
+    width: 330px;
+    height: 420px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+
+.projects-card:hover {
+    transform: translateY(-5px);
+}
+
+.projects-card-image {
+    width: 290px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #e5e7eb;
+}
+
+/*ESPECÍFICO IMG 4*/
+.projects-card-image4 {
+    width: 290px;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+
+    object-position: left;
+}
+
+.project-card-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card-info h5 {
+    font-size: 20px;
+}
+
+.project-card-info p {
+    font-size: 15px;
+    color: #7a7a7a;
+}
+
+.project-card-description {
+    margin-top: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #7a7a7a;
+    ;
+}
+
+.projects-card .btn {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 20px;
+    border-radius: 16px 0 10px 0;
+    border: none;
+    color: #fff;
+    background: #1f2937;
+    transition: width 0.6s ease;
+}
+
+.projects-card .btn:hover {
+    width: 120px;
+}
+
+
+
+
+/* =========================================
+   CARRERA - PORTFOLIO FABIO CUFFARO
+   ========================================= */
+
+
+   .career{
+
+    /*Seguimos estilo de caja*/
+    margin: 50px 20px;
+    border: 0.5px solid #c8cfd8;
+    border-radius: 12px;
+    padding: 30px 40px;
+
+    display: flex;
+    gap: 100px;
+}
+
+
+
+.career__jobs,
+.career__awards{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+.career h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.job,
+.award{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.job i,
+.award div i{
+    font-size: 30px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.award{
+    justify-content: space-between;
+}
+
+.award > div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.job__info h5,
+.award__info h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.job__info h5 span,
+.award__info h5 span{
+    font-weight: 600;
+}
+
+.job__info p,
+.award__info p{
+    font-size: 15px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   TECNOLOGÍAS - PORTFOLIO FABIO CUFFARO
+   ========================================= */
+
+
+
+
+
+.about {
+    margin: 40px 20px;
+    border: 0.5px solid #c8cfd8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+
+/*CENTRAR ELEMENTOS*/
+.about__container {
+    display: flex;
+}
+
+.about-text,
+.about-image {
+    width: 50%;
+}
+
+/*CENTRAR ELEMENTOS*/
+
+.about-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.about-text h3 {
+    color: #1f2a38;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+.about-text p {
+    text-align: center;
+    color: #5e6670;
+    font-size: 280px;
+}
+
+.tech{
+    display: flex;
+    font-size:40px ;
+    margin-bottom: 20px;
+}
+
+
+.about-text img {
+    width: 100px;
+}
+
+.tech-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.tech-images img{
+    width: 100px;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.274);
+}
+
+
+/* FOOTER */
+.footer {
+
+    margin-top: 15px;
+    background: #e5e7eb;
+    padding: 20px;
+    text-align: center;
+    color: #1f2937;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================
+   ADAPTACIÓN DE MODO OSCURO - PORTFOLIO FABIO CUFFARO
+   ================================================================ */
+.dark-mode {
+    background-color: #121212;
+}
+
+.dark-mode a {
+    color: #e5e7eb;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .hero{
+    background-color: #5757571c;
+}
+
+.dark-mode .btn {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+    transition: all 0.3 ease;
+}
+
+.dark-mode .hero h3,
+.dark-mode .hero h2,
+.dark-mode .skills__description h3,
+.dark-mode .skills__description i,
+.dark-mode .skills__stats i,
+.dark-mode .category-title h4,
+.dark-mode .career h5,
+.dark-mode .career h3,
+.dark-mode .about-text h3,
+.dark-mode .tech i,
+.dark-mode .footer{
+color: #fff;
+}
+
+.dark-mode .skills__stats p{
+    color: #000000;
+}
+
+
+.dark-mode .btn:hover {
+    box-shadow: 0 2px 15px rgba(250, 249, 249, 0.35);
+}
+
+.dark-mode .btn-secondary {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-color: #444;
+    transition: all 0.3 ease;
+}
+
+.dark-mode .btn-secondary:hover {
+    box-shadow: 0 2px 15px rgba(250, 249, 249, 0.35);
+}
+
+.dark-mode .projects-card {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 0.3px solid #7e7e7e; 
+}
+
+.dark-mode .projects-card:hover{
+    
+box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
+}
+
+.dark-mode .skills-stats .skill-info {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .hero-socials a {
+    border-color: #fff;
+    color: #fff;
+}
+
+.dark-mode .hero-content h2 span,
+.dark-mode .hero__intro span {
+    color: #fff;
+}
+
+.dark-mode .hero__intro h3 span:hover {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.35);
+}
+
+.dark-mode .hero-socials a:hover {
+    box-shadow: 0 2px 15px rgba(250, 249, 249, 0.35);
+}
+
+.dark-mode .clock {
+    color: #fff;
+}
+
+.dark-mode .showcase {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .about {
+    background-color: #1e1e1e; 
+}
+
+
+.dark-mode .hero__intro p,
+.dark-mode .skills__description p,
+.dark-mode .career p,
+.dark-mode .about-text p {
+    color: #adaeaf;
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================================================
+   BOTÓN PARA SUBIR ARRIBA - PORTFOLIO FABIO CUFFARO
+   ================================================================ */
+
+
+/* BOTÓN FLOTANTE */
+.btn-floating {
+    display: none;
+    /* Se oculta por defecto y se muestra con JS */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    /* Negro/Gris oscuro de tu paleta */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    /* Circular */
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-floating:hover {
+    transform: scale(1.1);
+}
+
+.btn-floating__img {
+    width: 25px;
+    /* Ajusta el tamaño de tu imagen aquí */
+    height: 25px;
+    object-fit: contain;
+    /* Si tu imagen es negra, puedes usar este filtro para ponerla blanca: */
+    /* filter: brightness(0) invert(1); */
+}
+
+/* Ajuste para móviles: un poco más pequeño */
+@media screen and (max-width: 600px) {
+    .btn-floating {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================
+   ADAPTACIÓN DE MEDIA QUERIES - PORTFOLIO FABIO CUFFARO
+   ================================================================ */
+
+/* 1. PORTÁTILES Y PANTALLAS MEDIANAS (1400px) */
+@media screen and (max-width: 1400px) {
+
+    .hero__img {
+        width: 320px;
+        height: auto;
+    }
+
+    .navbar__menu {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .navbar__menu a:hover {
+        font-size: 17px;
+    }
+
+    .hero__content h2 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .hero__intro h3 {
+        font-size: 46px;
+    }
+
+    .hero__intro p {
+        font-size: 17px;
+    }
+
+    .skills__description {
+        padding-right: 40px;
+    }
+
+    .skills__description h3 {
+        font-size: 24px;
+    }
+
+    .skills__description p {
+        font-size: 16px;
+    }
+
+    .skills__stats{
+        padding: 80px 0;
+    }
+
+    .skills__stats p{
+        font-size: 16px;
+    }
+
+     /* Carrera*/
+    
+     .career h3{
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 40px;
+     }
+
+     .job__info h5,
+     .award__info h5{
+         font-size: 18px;
+         font-weight: 400;
+      }
+    }
+
+    /* About Me */
+    .about-text h3 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+
+
+/* 2. TABLETS (1024px) — empieza el apilado vertical */
+@media screen and (max-width: 1024px) {
+
+    .navbar__menu {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .navbar__actions button {
+        font-size: 14px;
+    }
+
+    /* Hero: apilamos verticalmente */
+    .hero-inside {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero__content,
+    .hero__intro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__content {
+        align-items: center;
+    }
+
+    .hero__img {
+        width: 280px;
+        height: auto;
+    }
+
+    .hero__content h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .hero__intro h3 {
+        font-size: 38px;
+    }
+
+    .hero__intro p {
+        font-size: 16px;
+    }
+
+    .hero__socials {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Skills: apilamos verticalmente */
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills__description,
+    .skills__stats {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .skills__stats {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+
+    /* Carrera*/
+    
+     .career h3{
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+     }
+
+     .job__info h5,
+     .award__info h5{
+         font-size: 16px;
+         font-weight: 400;
+      }
+    
+
+
+    /* About Me */
+    .about__container {
+        align-items: center;
+        gap: 30px;
+    }
+
+
+    .about-image img {
+        width: 100%;
+    }
+}
+
+
+/* HAMBURGUESA — oculto por defecto en escritorio */
+.navbar__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #1f2937;
+    padding: 4px;
+    transition: transform 0.3s ease;
+}
+
+.navbar__hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* MENÚ MÓVIL desplegable (se inserta debajo del navbar con JS) */
+.navbar__mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 0 20px 10px;
+    border: 0.5px solid #c8cfd8;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.navbar__mobile-menu.open {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100; /* Para que esté por encima de todo */
+}
+
+.navbar__mobile-menu a {
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1f2937;
+    border-bottom: 0.5px solid #e5e7eb;
+    transition: background 0.2s ease;
+}
+
+.navbar__mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.navbar__mobile-menu a:hover {
+    background: #f3f4f6;
+}
+
+.dark-mode .navbar__mobile-menu {
+    background: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-mode .navbar__mobile-menu a {
+    color: #e5e7eb;
+    border-color: #333;
+}
+
+.dark-mode .navbar__mobile-menu a:hover {
+    background: #2a2a2a;
+}
+
+.dark-mode .navbar__hamburger {
+    color: #e5e7eb;
+}
+
+
+
+/* 3. SMARTPHONES (900px) */
+@media screen and (max-width: 900px) {
+
+    /* Navbar: ocultamos el menú central y mostramos hamburguesa */
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar__hamburger {
+        display: block;
+    }
+
+    .navbar__actions {
+        gap: 12px;
+    }
+
+    .navbar__actions button {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .hero__content h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .hero__intro h3 {
+        font-size: 32px;
+    }
+
+    .hero__intro p {
+        font-size: 15px;
+    }
+
+    .hero__img {
+        width: 240px;
+    }
+
+    .category-title {
+        font-size: 24px;
+        text-align: center;
+        padding:0;
+    }
+    .projects-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .projects-card-image,
+    .projects-card-image4{
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    .career__jobs,
+    .career__awards{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .career__jobs i,
+    .career__awards div i{
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .about__container{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+}
+
+
+/* 4. SMARTPHONES PEQUEÑOS (700px) */
+@media screen and (max-width: 700px) {
+
+    .navbar__logo i {
+        font-size: 30px;
+    }
+
+    .navbar {
+        padding: 14px 20px;
+    }
+
+    .navbar__location {
+        display: none;
+    }
+
+    .hero__content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .hero__intro h3 {
+        font-size: 28px;
+    }
+
+    .hero__img {
+        width: 200px;
+    }
+
+    .skills__description{
+        text-align:center;
+    }
+
+
+    
+    .skills__stats{
+        gap: 0;
+
+    }
+
+    .skills__stats i {
+        font-size: 30px;
+        padding: 0;
+
+    }
+
+    .skill-info {
+        padding: 3px;
+        text-align: center;
+    }
+
+    .skill-info h3 {
+        font-size: 16px;
+    }
+
+    .skill-info p {
+        font-size: 14.5px;
+    }
+
+    /* Proyectos */
+    .projects-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .projects-card-image,
+    .projects-card-image4 {
+        width: 100%;
+    }
+
+    .category-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .category-title {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+        /* Carrera*/
+        
+
+    .career{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0 0 0;
+    }
+    
+    .career__jobs,
+    .career__awards{
+        display:flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+
+    .career h3{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        background-color: #e5e7eb;  
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .job__info h5,
+    .award__info h5{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+        /* Tecnologías */ 
+
+    .about{
+        padding: 30px 0;
+    }
+
+
+    .tech{
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+    }
+
+    .final{
+        margin-bottom: 10px;
+    }
+
+    .tech-images{
+        display: flex;
+        flex-direction: column;
+    }
+
+     .about-image img {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+
+    .dark-mode .career h3{
+        color:#0b1f3b
+    } 
+
+    
+}
+
+/* 5. SMARTPHONES MUY PEQUEÑOS (420px) */
+@media screen and (max-width: 420px) {
+
+    .skills__stats i {
+        font-size: 30px;
+        padding: 0;
+
+    }
+
+    .skill-info {
+        padding: 3px;
+        text-align: center;
+    }
+
+    .skill-info h3 {
+        font-size: 16px;
+    }
+
+    .skill-info p {
+        font-size: 12px;
+    }
+}
