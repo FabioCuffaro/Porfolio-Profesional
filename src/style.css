@@ -944,6 +944,9 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
 /* 1 PORTÁTILES 14 PULGADAS (1400px) */
 @media screen and (max-width: 1800px) {
 
+    .navbar{
+        font-size: 0.8em;
+    }
     .hero{
         margin-top: 20px;
     }
@@ -960,7 +963,7 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
 
     .projects-card {
         width: 100%;
-        max-width: 500px;
+        max-width: 460px;
     }
 
     .projects-card-image,
