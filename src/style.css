@@ -71,7 +71,7 @@ img {
    ================================================================ */
 
 .navbar {
-    margin: 15px 20px;
+    margin: 20px 30px;
 
     border: 0.5px solid #c8cfd8;
     border-radius: 12px;
@@ -154,7 +154,7 @@ img {
    ====================================== */
 
 .hero {
-    margin: 15px 20px;
+    margin: 50px 25px 0 25px;
     border: 0.5px solid #c8cfd8;
     border-radius: 12px;
     padding: 30px 40px;
@@ -288,7 +288,7 @@ img {
 .skills {
 
     /*Seguimos estilo de caja*/
-    margin: 50px 20px;
+    margin: 20px 25px;
     border: 0.5px solid #c8cfd8;
     border-radius: 12px;
     padding: 30px 40px;
@@ -394,7 +394,7 @@ img {
    PROYECTOS DE GITHUB - PORTFOLIO FABIO CUFFARO
    ================================================================ */
 .showcase {
-    margin-top: 60px;
+    margin-top: 40px;
     padding: 30px 60px 100px;
     background: #e5e7eb;
 }
@@ -467,7 +467,7 @@ img {
 
 .projects-card {
     position: relative;
-    width: 330px;
+    width: 380px;
     height: 420px;
     padding: 20px;
     background: #fff;
@@ -481,8 +481,8 @@ img {
 }
 
 .projects-card-image {
-    width: 290px;
-    height: 180px;
+    width: 338px;
+    height: 190px;
     border-radius: 10px;
     object-fit: cover;
     border: 1px solid #e5e7eb;
@@ -490,8 +490,8 @@ img {
 
 /*ESPECÍFICO IMG 4*/
 .projects-card-image4 {
-    width: 290px;
-    height: 180px;
+    width: 338px;
+    height: 190px;
     border-radius: 10px;
     border: 1px solid #e5e7eb;
 
@@ -523,7 +523,7 @@ img {
 }
 
 .projects-card .btn {
-    width: 80px;
+    width: 120px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -536,7 +536,7 @@ img {
 }
 
 .projects-card .btn:hover {
-    width: 120px;
+    width: 150px;
 }
 
 
@@ -550,7 +550,7 @@ img {
    .career{
 
     /*Seguimos estilo de caja*/
-    margin: 50px 20px;
+    margin: 50px 25px 0 25px;
     border: 0.5px solid #c8cfd8;
     border-radius: 12px;
     padding: 30px 40px;
@@ -644,7 +644,7 @@ img {
 
 
 .about {
-    margin: 40px 20px;
+    margin: 20px 25px;
     border: 0.5px solid #c8cfd8;
     border-radius: 12px;
     display: flex;
@@ -1033,6 +1033,11 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
     }
 
     /* Hero: apilamos verticalmente */
+
+
+    .hero{
+        margin-top: 20px;
+    }
     .hero-inside {
         flex-direction: column;
         align-items: center;
@@ -1089,6 +1094,11 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
         padding: 20px 0;
     }
 
+
+    /*CARDS CENTRADAS */
+    .showcase{
+        padding: 30px 10px 100px;
+    }
 
     /* Carrera*/
     
@@ -1234,18 +1244,17 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
 
     .category-title {
         font-size: 24px;
-        text-align: center;
         padding:0;
     }
     .projects-card {
         width: 100%;
-        max-width: 300px;
+        max-width: 370px;
     }
 
     .projects-card-image,
     .projects-card-image4{
         width: 100%;
-        max-width: 300px;
+        max-width: 380px;
     }
 
 
@@ -1278,6 +1287,23 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
 
 /* 4. SMARTPHONES PEQUEÑOS (700px) */
 @media screen and (max-width: 700px) {
+
+
+    /*IMPORTANTE QUE VOY A HACER EL PADDING DE LOS LADOS
+    MÁS ESTRECHO PARA QUE SE VEA MEJOR*/
+
+    .navbar,
+    .hero,
+    .skills,
+    .career,
+    .about{
+       margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero{
+        margin-top: 20px;
+    }
 
     .navbar__logo i {
         font-size: 30px;
@@ -1337,7 +1363,7 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
     /* Proyectos */
     .projects-card {
         width: 100%;
-        max-width: 330px;
+        max-width: 350px;
     }
 
     .projects-card-image,
