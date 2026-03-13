@@ -941,7 +941,7 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
    ADAPTACIÓN DE MEDIA QUERIES - PORTFOLIO FABIO CUFFARO
    ================================================================ */
 
-/* 1 PORTÁTILES 14 PULGADAS (1400px) */
+/* 1 PORTÁTILES 14 PULGADAS (1800px) */
 @media screen and (max-width: 1800px) {
 
     .navbar{
@@ -949,6 +949,11 @@ box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
     }
     .hero{
         margin-top: 20px;
+    }
+
+    .hero__img{
+        width: 450px;
+        height: 430px;
     }
 
     .hero__content h2 {
