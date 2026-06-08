@@ -150,7 +150,7 @@ img {
 }
 
 .navbar__actions button:hover {
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .navbar__location h5 {
@@ -276,12 +276,13 @@ img {
 }
 
 .hero__content h2 span {
+    display: inline-block; /*O pongo esto, o al ser span no se transforma*/
     font-weight: 800;
     transition: all 0.3s ease;
 }
 
 .hero__content h2 span:hover {
-    color: #5e6670;
+    transform: translateY(-3px);
 }
 
 /* Texto introductorio */
@@ -486,7 +487,7 @@ img {
 }
 
 .projects-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .projects-card-image,
@@ -502,6 +503,16 @@ img {
 .projects-card-image4 {
     object-position: left;
 }
+
+
+.image-rally {
+    object-position: left;
+}
+
+.image-small {
+    transform: scale(0.9);
+}
+
 
 .project-card-info {
     display: flex;
@@ -813,6 +824,14 @@ img {
     color: #adaeaf;
 }
 
+.dark-mode .ri-mail-line:hover,
+.dark-mode .ri-github-fill:hover,
+.dark-mode .ri-linkedin-box-line:hover{
+box-shadow: 0 2px 15px rgba(250, 249, 249, 0.35);
+}
+
+
+
 /* Botones en modo oscuro */
 .dark-mode .btn {
     background-color: #333;
@@ -840,12 +859,17 @@ img {
 .dark-mode .projects-card {
     background-color: #1e1e1e;
     color: #fff;
-    border: 0.3px solid #7e7e7e;
+    border: 0.3px solid #ffffff;
 }
 
 .dark-mode .projects-card:hover {
     box-shadow: 0 2px 15px rgba(167, 167, 167, 0.35);
 }
+
+.dark-mode .project-card-description {
+    color: #dad6d6;
+}
+
 
 /* Otros elementos en modo oscuro */
 .dark-mode .skills-stats .skill-info {
@@ -1205,12 +1229,13 @@ img {
     .projects-card {
         width: 100%;
         max-width: 370px;
+        height: 460px;
     }
 
     .projects-card-image,
     .projects-card-image4 {
         width: 100%;
-        max-width: 380px;
+        max-width: 370px;
     }
 
     .career__jobs,
