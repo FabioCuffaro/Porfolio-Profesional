@@ -1,0 +1,18 @@
+# ==========================================================================
+# ARCHIVOS LOCALES — NO SUBIR A GITHUB NI DESPLEGAR EN VERCEL
+# ==========================================================================
+
+# Documentación local e historial de versiones.
+README_LOCAL.md
+README_*.md
+
+# Paquetes de entrega y archivos temporales.
+*.zip
+*.log
+
+# Metadatos locales de herramientas y sistema operativo.
+.vercel/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

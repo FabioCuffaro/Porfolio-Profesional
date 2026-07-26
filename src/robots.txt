@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fabio-cuffaro-porfolio.vercel.app/sitemap.xml

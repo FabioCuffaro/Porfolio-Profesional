@@ -1,439 +1,757 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabio Cuffaro | Portfolio</title>
-
-    <!-- FAVICON -->
-    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png" />
-
-    <!-- Descripción general -->
-    <meta name="description" content="Fabio Cuffaro Camara Potfolio, Software Developer, Marketing Specialist." />
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Fabio Cuffaro | Portfolio" />
-    <meta property="og:description" content="Software Developer + Marketing Specialist" />
-    <meta property="og:image" content="https://fabio-cuffaro-porfolio.vercel.app/img/portfolioWeb.jpeg" />
-    <meta property="og:url" content="https://fabio-cuffaro-porfolio.vercel.app/" />
-    <meta property="og:site_name" content="Fabio Cuffaro Camara Developer" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <link rel="stylesheet" href="style.css">
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VY3CRFNHQ0"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-VY3CRFNHQ0');
-    </script>
-
-</head>
-
-<body>
-
-    <!--NAVBAR-->
-
-    <nav class="navbar">
-
-        <a href="#" class="navbar__logo">
-            <i class="ri-code-ai-line"></i>
-            DevCuxa</a>
-
-        <div class="navbar__menu">
-            <a href="#skills" class="navbar__link">Habilidades</a>
-            <a href="#projects" class="navbar__link">Proyectos</a>
-            <a href="#career" class="navbar__link">Experiencia</a>
-            <a href="#about" class="navbar__link">Tecnologías</a>
-        </div>
-
-        <button id="hamburger" class="navbar__hamburger" aria-label="Abrir menú">
-            <i class="ri-menu-line"></i>
-        </button>
-
-        <div class="navbar__actions">
-            <div class="navbar__location">
-                <h5>Granada, España</h5>
-                <div id="clock" class="clock"></div>
-            </div>
-            
-            <a href="https://www.linkedin.com/in/fabiomcc" target="_blank">
-                <button class="btn">Contacto</button>
-            </a>
-            
-            <button id="theme-toggle" class="btn">🌙</button>
-        </div>
-
-    </nav>
-
-    <!--HEROO-->
-
-    <section class="hero">
-
-        <div class="hero-inside">
-
-            <div class="hero__content">
-                <img src="img/foto perfil.jpeg" alt="Foto de perfil" class="hero__img">
-                <h2>Hola! Soy <span>Fabio Cuffaro</span></h2>
-            </div>
-
-            <div class="hero__intro">
-                <h3>Desarrollador Junior</h3>
-                <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma y apasionado por la tecnología, el diseño y la programación moderna.</p>
-                <a href="https://www.linkedin.com/in/fabiomcc" target="_blank">
-                    <button class="btn">Trabaja conmigo</button>
-                </a>
-                <a href="#projects">
-                  <button class="btn--secondary">Ver Proyectos</button>  
-                </a>    
-                
-            </div>
-
-            <div class="hero__socials">
-                <a href="https://mail.google.com/mail/?view=cm&to=fabiomcc96@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
-                <a href="https://github.com/FabioCuffaro" target="_blank"><i class="ri-github-fill"></i></a>
-                <a href="https://www.linkedin.com/in/fabiomcc" target="_blank"><i class="ri-linkedin-box-line"></i></a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--SKILLS + GRID-->
-
-    <section class="skills" id="skills">
-
-        <div class="skills__description">
-            <h3>Antes de dedicarme a la programación he probado bastantes cosas...
-            </h3>
-            <p>Cada vez que he trabajado en algo he aprendido algo importante: A <i>reinventarme</i> 
-                <br><br>Me gradué en Marketing e Investigación de Mercados en 2019, tengo un master en Marketing Digital,
-                he trabajado representando a varias entidades, en varios idiomas y todas de distintos sectores.
-                Representé a una entidad social bancaria, catalogué toda una página web con fotos y productos para una óptica.
-                He ayudado a gente a encontrar la casa de sus sueños, he sido diseñador, gestor de redes sociales, negociador...
-
-                <br><br>
-                Conformarte no es la opción si quieres seguir avanzando profesionalmente. Por eso decidí subirme al barco del desarrollo.
-                Sigueme en LinkedIn y descubre mi trayectoria profesional:
-
-            </p>
-
-            <div class="skills__action">
-                <a href="https://mail.google.com/mail/?view=cm&to=fabiomcc96@gmail.com" target="_blank">
-                   <button class="btn">Trabaja conmigo</button>
- 
-                </a>
-                <a href="#projects">
-                    <button class="btn--secondary">Ver Proyectos</button>
-                </a>
-                                
-            </div>
-
-        </div>
-
-        <!--SKILLS GRID STATS-->
-
-        <div class="skills__stats">
-
-            <!--PRIMERA LINEA DEL GRID-->
-
-            <i class="ri-codepen-line"></i>
-            <div class="skill-info">
-                <h3>4+</h3>
-                <p>Reinventado</p>
-            </div>
-
-            <i class="ri-reactjs-line"></i>
-            <div class="skill-info">
-                <h3>3+</h3>
-                <p>Idiomas</p>
-            </div>
-
-            <!--SEGUNDA LINEA-->
-
-            <div class="skill-info">
-                <h3>20+</h3>
-                <p>Proyectos en equipo</p>
-            </div>
-
-            <i class="ri-rocket-line"></i>
-            <div class="skill-info">
-                <h3>8+</h3>
-                <p>Habilidades</p>
-            </div>
-            <i class="ri-global-line"></i>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section class="showcase" id="projects">
-
-
-        <!-- SHOWCASE -->
-
-        <div class="showcase-categories">
-
-
-            <!-- PROJECTS CATEGORY-->
-            <section class="category">
-
-                <div class="category-header">
-
-                    <div class="category-title">
-                        <i class="ri-macbook-line"></i>
-                        <h4>PortFolio y proyectos Github</h4>
-                    </div>
-
-                </div>
-
-
-                <!--CATEGORY PROJECTS-->
-                <div class="category-projects">
-
-                    <div class="projects-card">
-                        <img src="img/portfolioWeb.jpeg" alt="Página Web Actual" class="projects-card-image1">
-                        <div class="project-card-info">
-                            <h5>Web actual</h5>
-                            <p>Noviembre 2025</p>
-                        </div>
-                        <p class="project-card-description">Diseño limpio y profesional para mostrar proyectos
-                            personales. Uso avanzado de Html, Css y Js. Desplegada en Vercel 😁</p>
-                        <a href="https://github.com/FabioCuffaro/Porfolio-Profesional" target="_blank"><button class="btn">Github</button></a>
-                    </div>
-
-                    <div class="projects-card">
-                        <img src="img/calculadora básica.jpg" alt="Calculadora básica" class="projects-card-image">
-                        <div class="project-card-info">
-                            <h5>Calculadora</h5>
-                            <p>Marzo 2025</p>
-                        </div>
-                        <p class="project-card-description">Calculadora básica para aprender a posicionar elementos en
-                            un div y usar JavaScript básico para operaciones y mostrarlo por pantalla. Pruébala en Github Pages.</p>
-                        <a href="https://fabiocuffaro.github.io/Calculadora_Basica/" target="_blank"><button class="btn">Github Pages</button></a>
-                    </div>
-
-                    <div class="projects-card">
-                        <img src="img/Cuenta de Banco.jpg" alt="Backend Banco" class="projects-card-image">
-                        <div class="project-card-info">
-                            <h5>Backend Banco</h5>
-                            <p>Abril 2025</p>
-                        </div>
-                        <p class="project-card-description">Cuenta de Banco diseñada en Java.
-                            <br>
-                            Sólo Backend, no Frontend. Las clases principales son Cuenta de Banco y Cajero.
-                        </p>
-                        <a href="https://github.com/FabioCuffaro/Cuenta_Banco" target="_blank"><button class="btn">Github</button></a>
-                    </div>
-                    
-                     <!--    BANCO EXTENSIÓN   -->
-
-                    <div class="projects-card">
-                        <img src="img/cuentaBancoExt.png" alt="Banco Extended" class="projects-card-image4">
-                        <div class="project-card-info">
-                            <h5>Backend BancoExt</h5>
-                            <p>Abril 2025</p>
-                        </div>
-                        <p class="project-card-description">Extensión para contar los billetes a entregar al sacar
-                            dinero del Cajero. Muestra por pantalla mensaje porque no puede dar monedas, solo billetes.
-                        </p>
-                        <a href="https://github.com/FabioCuffaro/Cuenta_Banco_ext" target="_blank"><button class="btn">Github</button></a>
-                    </div>
-
-                     <!--    CALCULADORA 2   -->
-
-                    <div class="projects-card">
-                        <img src="img/Calculadora2.png" alt="Calculadora 2" class="projects-card-image">
-                        <div class="project-card-info">
-                            <h5>Calculadora 2</h5>
-                            <p>Marzo 2025</p>
-                        </div>
-                        <p class="project-card-description">Calculadora avanzada en CSS para aprender cómo se usa:
-                            linear-gradient, inset, active dentro y fuera para dar contornos y formas. Pruébala en Github Pages.</p>
-                        <a href="https://fabiocuffaro.github.io/Calculadora-2/" target="_blank"><button class="btn">Github Pages</button></a>
-                    </div>
-
-                     <!--    TFG   -->
-                    
-                    <div class="projects-card">
-                        <img src="img/redsocial.png" alt="Trabajo Final de Grado" class="projects-card-image">
-                        <div class="project-card-info">
-                            <h5>Red Social - TFG</h5>
-                            <p>Marzo 2026</p>
-                        </div>
-                        <p class="project-card-description">Proyecto final de Grado, basado en una red social completa. Permisos JWT, token, seguidores, post, imágenes... Échale un ojo 😏
-                        </p>
-                        <a href="https://github.com/FabioCuffaro/Tfg_Dam" target="_blank"><button class="btn">Github</button></a>
-                    </div>
-
-                    <!--    RALLY ANALISIS DE DATOS   -->
-
-                    <div class="projects-card">
-                        <img src="img/rally.png" alt="Rally Performance Project" class="projects-card-image image-rally">
-                        <div class="project-card-info">
-                            <h5>Rally Performance</h5>
-                            <p>Junio 2026</p>
-                        </div>
-                        <p class="project-card-description">Dashboard interactivo para analizar datos reales del World Rally Championship (WRC). Ingesta de datos con scraping ético, API REST con FastAPI y visualizaciones.
-                        </p>
-                        <a href="https://github.com/FabioCuffaro/Rally-performance-analyzer" target="_blank"><button class="btn">Github</button></a>
-                    </div>
-
-                    <!--    CONDUCTOR   -->
-
-                    <div class="projects-card">
-                        <img src="img/conductor.png" alt="Conductor Sistema Real" class="projects-card-image image-small">
-                        <div class="project-card-info">
-                            <h5>Conductor · Software</h5>
-                            <p>Junio 2026</p>
-                        </div>
-                        <p class="project-card-description">Software de análisis de datos real. Arquitectura de microservicios, Kafka, Docker, Seguridad, SQL, NOSQL, React, Dashboards...
-                        </p>
-                        <a href="https://mail.google.com/mail/?view=cm&to=fabiomcc96@gmail.com" target="_blank"><button class="btn">Pregúntame</button></a>
-                    </div>
-
-                </div>
-
-            </section>
-
-        </div>
-
-    </section>
-
-
-     <!-- CAREER -->
-
-    <section class="career" id="career">
-
-        <div class="career__jobs">
-            <h3>Experiencia Laboral</h3>
-            <div class="job">
-                <i class="ri-bar-chart-2-line"></i>
-                <div class="job__info">
-                    <h5>Analisis de Datos (ETL) - <span>Mercanza</span></h5>
-                    <p>Marzo 2026 - Present</p>
-                </div>
-            </div>
-            <div class="job">
-                <i class="ri-home-4-line"></i>
-                <div class="job__info">
-                    <h5>Oficial Administrativo - <span>Inmobiliaria Márquez</span></h5>
-                    <p>Octubre 2022 – Enero 2026</p>
-                </div>
-            </div>
-            <div class="job">
-                <i class="ri-seo-line"></i>
-                <div class="job__info">
-                    <h5>Departamento de Marketing - <span>Vipsual</span></h5>
-                    <p>Febrero 2021 – Julio 2021</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="career__awards">
-            <h3>Certificados</h3>
-            <div class="award">
-                <div>
-                    <i class="ri-medal-fill"></i>
-                    <div class="award__info">
-                        <h5>AWS Academy - <span>Cloud Foundations</span></h5>
-                        <p>Febrero 2026</p>
-                    </div>
-                </div>
-            </div>
-            <div class="award">
-                <div>
-                    <i class="ri-macbook-line"></i>
-                    <div class="award__info">
-                        <h5>Mouredev Pro Cursos -  <span>Brais Moure</span></h5>
-                        <p>En el presente</p>
-                    </div>
-                </div>
-            </div>
-            <div class="award" id="last_award">
-                <div>
-                    <i class="ri-award-fill"></i>
-                    <div class="award__info">
-                        <h5>Spring Boot/Java - <span>Bootcamp Nico Salgado</span></h5>
-                        <p>Agosto 2025</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- TECNOLOGIES -->
-    <section class="about" id="about">
-
-        <div class="about__container">
-
-            <div class="about-text">
-                <h3>Tecnologías</h3>
-                
-                <p>Tengo experiencia real con estas tecnologías y herramientas:  <br><br>
-               HTML, CSS, JS, Java, Python, Git, DART, MYSQL, PostgreSQL, Kotlin, React, Entornos virtualizados con Linux, Docker, AWS.<br><br>
-                </p>
-
-                    <div class="tech">
-                            <i class="ri-html5-fill"></i>
-                            <i class="ri-css3-fill"></i>
-                            <i class="ri-javascript-fill"></i>
-                            <i class="ri-java-fill"></i>
-                            <i class="ri-braces-fill"></i>
-                            <i class="ri-git-merge-line"></i>
-                            <i class="ri-database-2-fill"></i>
-                            <i class="ri-android-line"></i>
-                            <i class="ri-reactjs-line"></i>
-                            <i class="ri-flutter-fill"></i>
-                            <i class="ri-webhook-line"></i>
-                     </div>
-
-                  <p class="final"> Actualmente centrado en aprender y mejorar en las herramientas Backend. Mi experiencia actual es con Java y Python, usando frameworks como Spring Boot y FastApi. Además de librerias y herramientas como: Cloudinary, Kafka, Vercel, Tests, Asincronismo, Webhooks...  <br>
-
-                </p>
-                <br>
-                <div class="tech-images">
-                    <img src="img/pngaaa.com-2459546.png" class="spring">
-                    <img src="img/fastapi.png" class="fastapi">
-                    <img src="img/kafka.png" class="kafka">
-                </div>
-            </div>
-
-            <div class="about-image">
-                <img src="img/footer.jpg" alt="Foto Fabio" class="hero-image">
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© <span id="year"></span> Fabio Cuffaro | Granada, España</p>
-
-    </footer>
-
-
-
-
-    <button id="topBtn" class="btn-floating" title="Volver arriba" onclick="topFunction()">
-        <img src="img/608336.png" alt="Subir" class="btn-floating__img">
+ <head>
+  <!--
+  1. CONFIGURACIÓN, SEO Y RECURSOS
+  Metadatos, iconos, Open Graph, datos estructurados, estilos y analítica.
+-->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="index, follow, max-image-preview:large" name="robots"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+  <title>Fabio Cuffaro | Backend Developer</title>
+  <meta content="Portfolio de Fabio Cuffaro, Backend Developer especializado en Java, Spring Boot, Python, FastAPI, APIs, microservicios e inteligencia artificial aplicada." data-i18n-content="meta.description" name="description"/>
+  <link href="https://fabio-cuffaro-porfolio.vercel.app/" rel="canonical"/>
+  <link href="img/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="img/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="img/favicon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Fabio Cuffaro | Backend Developer" property="og:title"/>
+  <meta content="Java, Spring Boot, Python, FastAPI, arquitectura backend e inteligencia artificial aplicada." data-i18n-content="meta.ogDescription" property="og:description"/>
+  <meta content="https://fabio-cuffaro-porfolio.vercel.app/img/og-portfolio.jpg" property="og:image"/>
+  <meta content="https://fabio-cuffaro-porfolio.vercel.app/" property="og:url"/>
+  <meta content="Fabio Cuffaro | Portfolio" property="og:site_name"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Fabio Cuffaro | Backend Developer" name="twitter:title"/>
+  <meta content="Java, Spring Boot, Python, FastAPI, arquitectura backend e inteligencia artificial aplicada." data-i18n-content="meta.ogDescription" name="twitter:description"/>
+  <meta content="https://fabio-cuffaro-porfolio.vercel.app/img/og-portfolio.jpg" name="twitter:image"/>
+  <script type="application/ld+json">
+   {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fabio Cuffaro",
+        "url": "https://fabio-cuffaro-porfolio.vercel.app/",
+        "image": "https://fabio-cuffaro-porfolio.vercel.app/img/foto%20perfil.jpeg",
+        "jobTitle": "Backend Developer",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Granada",
+            "addressCountry": "ES"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/fabiomcc",
+            "https://github.com/FabioCuffaro"
+        ],
+        "knowsAbout": [
+            "Java", "Spring Boot", "Python", "FastAPI", "REST APIs",
+            "PostgreSQL", "MongoDB", "Apache Kafka", "Docker",
+            "Microservices", "Artificial Intelligence"
+        ]
+    }
+  </script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+  <link href="https://www.googletagmanager.com" rel="preconnect"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VY3CRFNHQ0">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VY3CRFNHQ0');
+  </script>
+ </head>
+ <body id="top">
+  <!--
+  ÍNDICE DEL DOCUMENTO
+  2. Navbar y controles globales
+  3. Hero y presentación profesional
+  4. Perfil y evidencias
+  5. Portfolio y proyectos
+  6. Experiencia, formación y referencias
+  7. Tecnologías
+  8. Footer
+  9. Selector de currículum
+  10. Botón volver arriba y scripts
+-->
+  <!--
+  2. NAVBAR — navegación, idiomas, currículum y tema
+-->
+  <nav aria-label="Navegación principal" class="navbar" data-i18n-aria-label="nav.aria">
+   <a aria-label="Ir al inicio" class="navbar__logo" data-i18n-aria-label="nav.homeAria" href="#top">
+    <i aria-hidden="true" class="ri-code-ai-line"></i>
+    <span>DevCuxa</span>
+   </a>
+   <div class="navbar__menu">
+    <a data-i18n="nav.profile" href="#skills">Perfil</a>
+    <a data-i18n="nav.projects" href="#projects">Proyectos</a>
+    <a data-i18n="nav.experience" href="#career">Experiencia</a>
+    <a data-i18n="nav.technologies" href="#about">Tecnologías</a>
+   </div>
+   <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú" class="navbar__hamburger" data-i18n-aria-label="nav.menuOpen" id="hamburger" type="button">
+    <i aria-hidden="true" class="ri-menu-line"></i>
+    <span aria-hidden="true" class="navbar__hamburger-label" data-i18n="nav.menuLabel">Menú</span>
+   </button>
+   <div class="navbar__actions">
+    <div aria-label="Seleccionar idioma" class="language-switcher" data-i18n-aria-label="language.selectorAria" role="group">
+     <button aria-label="Español" aria-pressed="true" class="language-switcher__button is-active" data-lang="es" type="button">ES</button>
+     <button aria-label="English" aria-pressed="false" class="language-switcher__button" data-lang="en" type="button">EN</button>
+     <button aria-label="Italiano" aria-pressed="false" class="language-switcher__button" data-lang="it" type="button">IT</button>
+    </div>
+    <button aria-controls="cv-language-popover" aria-expanded="false" class="btn navbar__cv cv-trigger" data-cv-trigger="" type="button">
+     <i aria-hidden="true" class="ri-download-2-line"></i>
+     <span data-i18n="common.cvShort">CV</span>
     </button>
-</body>
-<script src="script.js"></script>
-
+    <button aria-label="Activar modo oscuro" class="btn theme-toggle" data-i18n-aria-label="theme.enableDark" data-i18n-title="theme.enableDark" id="theme-toggle" title="Activar modo oscuro" type="button">
+     <i aria-hidden="true" class="ri-moon-line"></i>
+    </button>
+   </div>
+  </nav>
+  <main>
+   <!--
+  3. HERO — fotografía, posicionamiento, CTA y redes
+-->
+   <section aria-labelledby="hero-title" class="hero">
+    <div class="hero-inside">
+     <div class="hero__content" data-anim="left">
+      <img alt="Retrato de Fabio Cuffaro" class="hero__img" data-i18n-alt="hero.imageAlt" decoding="async" fetchpriority="high" height="600" src="img/foto perfil.jpeg" width="600"/>
+      <h2 class="hero__name-line">
+       <span data-i18n="hero.hello">¡Hola! Soy</span>
+       <span>Fabio Cuffaro</span>
+      </h2>
+     </div>
+     <div class="hero__intro" data-anim="up" data-delay="100">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">
+       Backend · APIs · Microservicios · IA aplicada
+      </p>
+      <h1 data-i18n="hero.title" id="hero-title">Backend Developer</h1>
+      <p class="hero__stack" data-i18n="hero.stack">
+       Java / Spring Boot · Python / FastAPI
+      </p>
+      <p class="hero__description" data-i18n="hero.description">
+       Técnico Superior en Desarrollo de Aplicaciones Multiplataforma con experiencia en una
+                        plataforma empresarial cloud-native. Desarrollo APIs seguras, servicios backend y soluciones
+                        orientadas a datos, con interés creciente en la integración práctica de inteligencia artificial.
+      </p>
+      <div class="hero__actions">
+       <a class="btn" data-i18n="common.viewProjects" href="#projects">Ver proyectos</a>
+       <button aria-controls="cv-language-popover" aria-expanded="false" class="btn--secondary cv-trigger" data-cv-trigger="" data-i18n="common.downloadCv" type="button">Descargar CV</button>
+      </div>
+     </div>
+     <div aria-label="Redes y contacto" class="hero__socials" data-anim="right" data-delay="180" data-i18n-aria-label="social.groupAria">
+      <a aria-label="Enviar correo a Fabio" data-i18n-aria-label="social.emailAria" href="mailto:fabiomcc96@gmail.com">
+       <i aria-hidden="true" class="ri-mail-line"></i>
+      </a>
+      <a aria-label="GitHub de Fabio Cuffaro" data-i18n-aria-label="social.githubAria" href="https://github.com/FabioCuffaro" rel="noopener noreferrer" target="_blank">
+       <i aria-hidden="true" class="ri-github-fill"></i>
+      </a>
+      <a aria-label="LinkedIn de Fabio Cuffaro" data-i18n-aria-label="social.linkedinAria" href="https://www.linkedin.com/in/fabiomcc" rel="noopener noreferrer" target="_blank">
+       <i aria-hidden="true" class="ri-linkedin-box-line"></i>
+      </a>
+     </div>
+    </div>
+   </section>
+   <!--
+  4. PERFIL — trayectoria y evidencias profesionales
+-->
+   <section aria-labelledby="profile-title" class="skills" id="skills">
+    <div class="skills__description" data-anim="left">
+     <h3 data-i18n="profile.title" id="profile-title">Mi trayectoria no empezó en la programación, y eso también suma.</h3>
+     <p data-i18n="profile.paragraph1">
+      Antes de desarrollar software trabajé en marketing, comunicación, administración, ventas y
+                    atención al cliente. Esa experiencia me enseñó a entender necesidades, hacer las preguntas
+                    correctas y comunicar soluciones con claridad.
+     </p>
+     <p data-i18n="profile.paragraph2">
+      En 2026 finalicé Desarrollo de Aplicaciones Multiplataforma y participé en Conductor, una
+                    plataforma analítica cloud-native y multi-tenant para Mercanza. Hoy centro mi perfil en backend
+                    con Java, Spring Boot, Python y FastAPI, y continúo especializándome mediante un Máster en
+                    AI Engineering en Prometeo · ThePowerMBA.
+     </p>
+     <div class="skills__action">
+      <a class="btn" data-i18n="common.viewLinkedin" href="https://www.linkedin.com/in/fabiomcc" rel="noopener noreferrer" target="_blank">Ver LinkedIn</a>
+      <a class="btn--secondary" data-i18n="common.viewExperience" href="#career">Ver experiencia</a>
+     </div>
+    </div>
+    <div aria-label="Evidencias profesionales" class="skills__stats" data-i18n-aria-label="profile.evidenceAria" data-stagger="up" data-step="150">
+     <i aria-hidden="true" class="skill-icon ri-graduation-cap-line"></i>
+     <div class="skill-info">
+      <h3 data-i18n="profile.evidence.languagesTitle">Idiomas</h3>
+      <p data-i18n="profile.evidence.languages">
+       Español · Inglés · Italiano
+      </p>
+     </div>
+     <i aria-hidden="true" class="skill-icon ri-cloud-line"></i>
+     <div class="skill-info">
+      <h3>10/10</h3>
+      <p data-i18n="profile.evidence.tfg">
+       Proyecto final de ciclo
+      </p>
+     </div>
+     <div class="skill-info">
+      <h3>DAM</h3>
+      <p data-i18n="profile.evidence.dam">
+       Titulación oficial finalizada
+      </p>
+     </div>
+     <i aria-hidden="true" class="skill-icon ri-global-line"></i>
+     <div class="skill-info">
+      <h3>Cloud-native</h3>
+      <p data-i18n="profile.evidence.cloud">
+       Experiencia en plataforma real
+      </p>
+     </div>
+     <i aria-hidden="true" class="skill-icon ri-code-box-line"></i>
+    </div>
+   </section>
+   <!--
+  5. PROYECTOS — casos principales y acceso a GitHub
+-->
+   <section aria-labelledby="projects-title" class="showcase" id="projects">
+    <div>
+     <section>
+      <div class="category-header" data-anim="up">
+       <div class="category-title">
+        <i aria-hidden="true" class="ri-macbook-line"></i>
+        <h4 data-i18n="projects.sectionTitle" id="projects-title">Portfolio y proyectos de GitHub</h4>
+       </div>
+      </div>
+      <!--
+  5.1 Tarjetas de proyectos
+-->
+      <div class="category-projects" data-stagger="up" data-step="130">
+       <article class="projects-card">
+        <span class="project-badge" data-i18n="projects.badges.professional">Experiencia profesional</span>
+        <img alt="Identidad visual de la plataforma Conductor" class="projects-card-image image-small" data-i18n-alt="projects.conductor.imageAlt" decoding="async" height="972" loading="lazy" src="img/conductor.png" width="1800"/>
+        <div class="project-card-info">
+         <h5 data-i18n="projects.conductor.title">Conductor · Plataforma analítica</h5>
+         <p data-i18n="projects.conductor.date">
+          Marzo – Junio 2026
+         </p>
+        </div>
+        <p class="project-card-description" data-i18n="projects.conductor.description">
+         Plataforma empresarial cloud-native y multi-tenant. Mi trabajo se centró en APIs y BFF,
+                                autenticación y autorización con JWT/RS256, control de acceso basado en roles y permisos,
+                                Kafka, Docker, PostgreSQL, MongoDB, testing y validación de migraciones.
+        </p>
+        <div aria-label="Tecnologías de Conductor" class="project-tech-list" data-i18n-aria-label="projects.conductor.techAria">
+         <span>Python</span>
+         <span>FastAPI</span>
+         <span>Kafka</span>
+         <span>Docker</span>
+         <span>PostgreSQL</span>
+         <span>MongoDB</span>
+         <span>JWT / RS256</span>
+         <span data-i18n="projects.conductor.rbacTag">RBAC · roles y permisos</span>
+        </div>
+        <a class="btn" data-i18n="common.viewExperience" href="https://www.linkedin.com/in/fabiomcc" rel="noopener noreferrer" target="_blank">Ver experiencia</a>
+       </article>
+       <article class="projects-card">
+        <span class="project-badge" data-i18n="projects.badges.featured">Proyecto destacado</span>
+        <img alt="Pantalla de acceso de la red social desarrollada como TFG" class="projects-card-image" data-i18n-alt="projects.tfg.imageAlt" decoding="async" height="660" loading="lazy" src="img/redsocial.png" width="1337"/>
+        <div class="project-card-info">
+         <h5 data-i18n="projects.tfg.title">Backend Red Social · Java/Spring Boot</h5>
+         <p data-i18n="projects.tfg.date">
+          Marzo 2026
+         </p>
+        </div>
+        <p class="project-card-description" data-i18n="projects.tfg.description">
+         Proyecto final de DAM calificado con 10/10. API REST para una red social con Spring Boot,
+                                Spring Security, autenticación JWT, usuarios, seguidores, publicaciones, imágenes,
+                                persistencia y control de permisos.
+        </p>
+        <div aria-label="Tecnologías del proyecto final" class="project-tech-list" data-i18n-aria-label="projects.tfg.techAria">
+         <span>Java</span>
+         <span>Spring Boot</span>
+         <span>Spring Security</span>
+         <span>JWT</span>
+         <span>MySQL</span>
+        </div>
+        <a class="btn" href="https://github.com/FabioCuffaro/Tfg_Dam" rel="noopener noreferrer" target="_blank">GitHub</a>
+       </article>
+       <article class="projects-card">
+        <span class="project-badge" data-i18n="projects.badges.featured">Proyecto destacado</span>
+        <img alt="Dashboard del proyecto Rally Performance Analyzer" class="projects-card-image image-rally" data-i18n-alt="projects.rally.imageAlt" decoding="async" height="739" loading="lazy" src="img/rally.png" width="1600"/>
+        <div class="project-card-info">
+         <h5 data-i18n="projects.rally.title">Rally Performance Analyzer</h5>
+         <p data-i18n="projects.rally.date">
+          Junio 2026
+         </p>
+        </div>
+        <p class="project-card-description" data-i18n="projects.rally.description">
+         Aplicación para analizar datos reales del World Rally Championship. Integra scraping
+                                responsable, procesamiento de información, una API REST con FastAPI y visualizaciones
+                                orientadas al rendimiento deportivo.
+        </p>
+        <div aria-label="Tecnologías de Rally Performance" class="project-tech-list" data-i18n-aria-label="projects.rally.techAria">
+         <span>Python</span>
+         <span>FastAPI</span>
+         <span>Pandas</span>
+         <span data-i18n="projects.tags.scraping">Scraping</span>
+         <span data-i18n="projects.tags.data">Datos</span>
+        </div>
+        <a class="btn" href="https://github.com/FabioCuffaro/Rally-performance-analyzer" rel="noopener noreferrer" target="_blank">GitHub</a>
+       </article>
+       <article class="projects-card">
+        <span class="project-badge project-badge--secondary" data-i18n="projects.badges.personal">Proyecto personal</span>
+        <img alt="Captura del portfolio profesional" class="projects-card-image1" data-i18n-alt="projects.portfolio.imageAlt" decoding="async" height="751" loading="lazy" src="img/portfolioWeb.jpeg" width="1600"/>
+        <div class="project-card-info">
+         <h5 data-i18n="projects.portfolio.title">Portfolio profesional</h5>
+         <p data-i18n="projects.portfolio.date">
+          Noviembre 2025
+         </p>
+        </div>
+        <p class="project-card-description" data-i18n="projects.portfolio.description">
+         Portfolio estático desarrollado desde cero para presentar proyectos y experiencia.
+                                Incluye diseño responsive, modo oscuro, mejoras de accesibilidad, SEO y despliegue en Vercel.
+        </p>
+        <div aria-label="Tecnologías del portfolio" class="project-tech-list" data-i18n-aria-label="projects.portfolio.techAria">
+         <span>HTML</span>
+         <span>CSS</span>
+         <span>JavaScript</span>
+         <span>Responsive</span>
+         <span>Vercel</span>
+        </div>
+        <a class="btn" href="https://github.com/FabioCuffaro/Porfolio-Profesional" rel="noopener noreferrer" target="_blank">GitHub</a>
+       </article>
+       <article class="projects-card">
+        <span class="project-badge project-badge--planned" data-i18n="projects.badges.inDevelopment">En desarrollo</span>
+        <div aria-hidden="true" class="project-card-concept">
+         <i class="ri-robot-2-line project-card-concept__icon"></i>
+         <div class="project-card-concept__flow">
+          <span>Frontend</span>
+          <i class="ri-arrow-right-line"></i>
+          <span>FastAPI</span>
+          <i class="ri-arrow-right-line"></i>
+          <span>Ollama</span>
+          <i class="ri-arrow-right-line"></i>
+          <span data-i18n="projects.chatbot.localModel">Modelo local</span>
+         </div>
+        </div>
+        <div class="project-card-info">
+         <h5 data-i18n="projects.chatbot.title">Chatbot local con IA</h5>
+         <p data-i18n="projects.chatbot.date">
+          Julio 2026
+         </p>
+        </div>
+        <p class="project-card-description" data-i18n="projects.chatbot.description">
+         Proyecto en desarrollo para construir un chat local ligero mediante una API con FastAPI
+                                y Pydantic. La arquitectura está planteada para ejecutar modelos con Ollama, gestionar
+                                contexto e historial y permitir futuros proveedores de IA.
+        </p>
+        <div aria-label="Tecnologías previstas para el chatbot" class="project-tech-list" data-i18n-aria-label="projects.chatbot.techAria">
+         <span>Python</span>
+         <span>FastAPI</span>
+         <span>Pydantic</span>
+         <span>Ollama</span>
+         <span data-i18n="projects.chatbot.localLlm">LLM local</span>
+        </div>
+        <span class="project-status project-status--animated" data-i18n="projects.chatbot.status" data-i18n-title="projects.chatbot.statusTitle" title="Proyecto actualmente en desarrollo">Diseño y desarrollo en curso</span>
+       </article>
+       <article class="projects-card">
+        <span class="project-badge project-badge--secondary" data-i18n="projects.badges.repository">Repositorio completo</span>
+        <div aria-hidden="true" class="project-card-concept project-card-concept--github">
+         <i class="ri-github-fill project-card-concept__icon"></i>
+         <p data-i18n="projects.more.areas">
+          Java · Python · Frontend · Bases de datos
+         </p>
+        </div>
+        <div class="project-card-info">
+         <h5 data-i18n="projects.more.title">Más proyectos y evolución técnica</h5>
+         <p>
+          GitHub
+         </p>
+        </div>
+        <p class="project-card-description" data-i18n="projects.more.description">
+         Consulta otros ejercicios y proyectos de aprendizaje: aplicaciones Java, lógica backend,
+                                interfaces web, bases de datos y experimentos técnicos que muestran mi evolución.
+        </p>
+        <div aria-label="Áreas de otros proyectos" class="project-tech-list" data-i18n-aria-label="projects.more.techAria">
+         <span>Java</span>
+         <span>Python</span>
+         <span data-i18n="projects.tags.web">Web</span>
+         <span>SQL</span>
+         <span data-i18n="projects.tags.learning">Aprendizaje</span>
+        </div>
+        <a class="btn" data-i18n="common.viewAll" href="https://github.com/FabioCuffaro?tab=repositories" rel="noopener noreferrer" target="_blank">Ver todos</a>
+       </article>
+      </div>
+     </section>
+    </div>
+   </section>
+   <!--
+  6. EXPERIENCIA — trabajo, formación y referencias
+-->
+   <section aria-labelledby="career-title" class="career" id="career">
+    <div class="career__jobs" data-anim="left">
+     <h3 data-i18n="career.experienceTitle" id="career-title">Experiencia laboral</h3>
+     <article class="job job--featured">
+      <i aria-hidden="true" class="ri-code-box-line"></i>
+      <div class="job__info">
+       <h5>
+        <span data-i18n="career.mercanza.role">Software Engineer Intern</span>
+        — Mercanza
+       </h5>
+       <p class="job__date" data-i18n="career.mercanza.date">
+        Marzo 2026 – Junio 2026
+       </p>
+       <p class="job__description" data-i18n="career.mercanza.description">
+        Participación en el desarrollo y validación de una plataforma analítica empresarial
+                            cloud-native, trabajando sobre servicios backend, seguridad, datos e integración.
+       </p>
+       <ul class="job__highlights">
+        <li data-i18n="career.mercanza.highlight1">APIs, BFF, autenticación, autorización, roles y permisos.</li>
+        <li data-i18n="career.mercanza.highlight2">Arquitectura multi-tenant, PostgreSQL, MongoDB y migraciones.</li>
+        <li data-i18n="career.mercanza.highlight3">Kafka, Docker, testing unitario, integración y regresión.</li>
+       </ul>
+      </div>
+     </article>
+     <article class="job">
+      <i aria-hidden="true" class="ri-home-4-line"></i>
+      <div class="job__info">
+       <h5>
+        <span data-i18n="career.marquez.role">Oficial administrativo</span>
+        — Inmobiliaria Márquez
+       </h5>
+       <p class="job__date" data-i18n="career.marquez.date">
+        Octubre 2022 – Febrero 2026
+       </p>
+       <p class="job__description" data-i18n="career.marquez.description">
+        Gestión administrativa, atención a clientes, organización documental, seguimiento de
+                            operaciones y resolución de incidencias en un entorno de contacto directo con el público.
+       </p>
+      </div>
+     </article>
+     <article class="job">
+      <i aria-hidden="true" class="ri-seo-line"></i>
+      <div class="job__info">
+       <h5>
+        <span data-i18n="career.vipsual.role">Departamento de marketing</span>
+        — Vipsual
+       </h5>
+       <p class="job__date" data-i18n="career.vipsual.date">
+        Febrero 2021 – Julio 2021
+       </p>
+       <p class="job__description" data-i18n="career.vipsual.description">
+        Apoyo en marketing digital, comunicación, gestión de contenidos y coordinación de tareas
+                            dentro de un equipo orientado a proyectos y clientes.
+       </p>
+      </div>
+     </article>
+    </div>
+    <div class="career__awards" data-anim="right">
+     <h3 data-i18n="education.title">Formación y acreditaciones</h3>
+     <article class="award award--featured">
+      <div>
+       <i aria-hidden="true" class="ri-brain-line"></i>
+       <div class="award__info">
+        <h5><span data-i18n="education.master.title">Máster en AI Engineering</span> — Prometeo · ThePowerMBA</h5>
+        <p data-i18n="education.master.date">Junio 2026 – Septiembre 2026 · En curso</p>
+        <p class="award__description" data-i18n="education.master.description">
+         Especialización práctica en inteligencia artificial, integración de modelos, automatización y desarrollo de soluciones de ingeniería de IA.
+        </p>
+       </div>
+      </div>
+     </article>
+     <article class="award award--featured">
+      <div>
+       <i aria-hidden="true" class="ri-graduation-cap-line"></i>
+       <div class="award__info">
+        <h5>
+         <span data-i18n="education.dam.title">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</span>
+        </h5>
+        <p data-i18n="education.dam.date">
+         Finalizado en 2026
+        </p>
+        <p class="award__description" data-i18n="education.dam.description">
+         Formación oficial en programación, bases de datos, servicios,
+                                interfaces, acceso a datos y desarrollo multiplataforma.
+        </p>
+       </div>
+      </div>
+     </article>
+     <article class="award">
+      <div>
+       <i aria-hidden="true" class="ri-medal-fill"></i>
+       <div class="award__info">
+        <h5>
+         AWS Academy —
+         <span>Cloud Foundations</span>
+        </h5>
+        <p data-i18n="education.aws.date">
+         Febrero 2026
+        </p>
+        <p class="award__description" data-i18n="education.aws.description">
+         Fundamentos de cloud computing, servicios AWS, seguridad,
+                                arquitectura, costes y soporte.
+        </p>
+       </div>
+      </div>
+     </article>
+     <article class="award">
+      <div>
+       <i aria-hidden="true" class="ri-macbook-line"></i>
+       <div class="award__info">
+        <h5>
+         <span data-i18n="education.nicolas.title">Formación Java y Spring Boot</span>
+         — Nicolás Salgado
+        </h5>
+        <p data-i18n="education.nicolas.date">
+         Junio 2025 – Octubre 2025
+        </p>
+        <p class="award__description" data-i18n="education.nicolas.description">
+         Backend con Java, Spring Boot, APIs REST, seguridad,
+                                persistencia y prácticas de desarrollo profesional.
+        </p>
+       </div>
+      </div>
+     </article>
+     <article class="award">
+      <div>
+       <i aria-hidden="true" class="ri-terminal-box-line"></i>
+       <div class="award__info">
+        <h5>
+         <span data-i18n="education.brais.title">Formación técnica en programación y backend</span>
+         — Brais Moure · MoureDev
+        </h5>
+        <p data-i18n="education.brais.date">
+         Formación técnica complementaria
+        </p>
+        <p class="award__description" data-i18n="education.brais.description">
+         Programa práctico con lógica de programación, Java, SQL,
+                                Python, FastAPI, desarrollo de APIs e implementación progresiva de soluciones backend.
+        </p>
+       </div>
+      </div>
+     </article>
+    </div>
+    <!--
+  6.1 Referencias profesionales
+-->
+    <aside class="career__recommendation" data-anim="up">
+     <i aria-hidden="true" class="ri-double-quotes-l"></i>
+     <div>
+      <h4 data-i18n="recommendation.title">Referencias y trabajo en equipo</h4>
+      <p data-i18n="recommendation.text">
+       Mis recomendaciones profesionales respaldan iniciativa, autonomía, responsabilidad,
+                        comunicación y capacidad de colaboración. También puedes consultar el artículo de mi tutor en
+                        Mercanza sobre el uso combinado de criterio humano e inteligencia artificial en un proyecto real.
+      </p>
+      <div class="career__recommendation-links">
+       <a class="btn" data-i18n="recommendation.view" href="https://www.linkedin.com/in/fabiomcc/details/recommendations/" rel="noopener noreferrer" target="_blank">Ver recomendaciones</a>
+       <a class="btn--secondary" data-i18n="recommendation.article" href="https://es.linkedin.com/pulse/inteligencia-artificial-e-natural-una-experiencia-real-cabeza-pfvde" rel="noopener noreferrer" target="_blank">Leer artículo sobre IA y equipo</a>
+      </div>
+     </div>
+    </aside>
+   </section>
+   <!--
+  7. TECNOLOGÍAS — stack, especialización y fotografía
+-->
+   <section aria-labelledby="technologies-title" class="about" id="about">
+    <h3 class="about__title" data-anim="up" data-i18n="technologies.title" id="technologies-title">Tecnologías</h3>
+    <div class="about__container">
+     <div class="about-text">
+      <p class="about-text__intro" data-anim="up" data-delay="70" data-i18n="technologies.intro">
+       Mi stack principal se concentra en backend. Las tecnologías se muestran por función para
+                        diferenciar la especialización principal de las competencias complementarias.
+      </p>
+      <!--
+  7.1 Tarjetas visuales del stack principal
+-->
+      <div aria-label="Tecnologías principales destacadas" class="tech-visual-strip" data-i18n-aria-label="technologies.stripAria" data-stagger="zoom" data-step="90">
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <i aria-hidden="true" class="ri-java-fill"></i>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>Java</strong>
+         <span data-i18n="technologies.roles.backendLanguage">Lenguaje backend</span>
+        </div>
+       </div>
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <img alt="" aria-hidden="true" decoding="async" height="223" loading="lazy" src="img/pngaaa.com-2459546.png" width="585"/>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>Spring Boot</strong>
+         <span data-i18n="technologies.roles.backendFramework">Framework backend</span>
+        </div>
+       </div>
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <img alt="Logotipo de Python" data-i18n-alt="technologies.logoAlt.python" decoding="async" height="256" loading="lazy" src="img/python.png" width="256"/>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>Python</strong>
+         <span data-i18n="technologies.roles.backendLanguage">Lenguaje backend</span>
+        </div>
+       </div>
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <img alt="" aria-hidden="true" decoding="async" height="169" loading="lazy" src="img/fastapi.png" width="900"/>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>FastAPI</strong>
+         <span data-i18n="technologies.roles.apiFramework">Framework para APIs</span>
+        </div>
+       </div>
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <img alt="Logotipo de PostgreSQL" data-i18n-alt="technologies.logoAlt.postgresql" decoding="async" height="256" loading="lazy" src="img/postgresql.png" width="249"/>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>PostgreSQL</strong>
+         <span data-i18n="technologies.roles.sqlDatabase">Base de datos SQL</span>
+        </div>
+       </div>
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <img alt="Logotipo de MongoDB" data-i18n-alt="technologies.logoAlt.mongodb" decoding="async" height="250" loading="lazy" src="img/mongodb.png" width="256"/>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>MongoDB</strong>
+         <span data-i18n="technologies.roles.nosqlDatabase">Base de datos NoSQL</span>
+        </div>
+       </div>
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <img alt="" aria-hidden="true" decoding="async" height="650" loading="lazy" src="img/kafka.png" width="586"/>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>Kafka</strong>
+         <span data-i18n="technologies.roles.messaging">Mensajería distribuida</span>
+        </div>
+       </div>
+       <div class="tech-visual-item">
+        <div class="tech-visual-item__logo">
+         <img alt="Logotipo de Docker" data-i18n-alt="technologies.logoAlt.docker" decoding="async" height="184" loading="lazy" src="img/docker.png" width="256"/>
+        </div>
+        <div class="tech-visual-item__info">
+         <strong>Docker</strong>
+         <span data-i18n="technologies.roles.containers">Contenedores</span>
+        </div>
+       </div>
+      </div>
+      <!--
+  7.2 Agrupación de tecnologías por función
+-->
+      <div class="tech-groups" data-stagger="up" data-step="105">
+       <article class="tech-group tech-group--primary">
+        <h4 data-i18n="technologies.groups.main">Stack principal</h4>
+        <div class="tech-tags">
+         <span>Java</span>
+         <span>Spring Boot</span>
+         <span>Python</span>
+         <span>FastAPI</span>
+        </div>
+       </article>
+       <article class="tech-group">
+        <h4 data-i18n="technologies.groups.backend">Backend, arquitectura y seguridad</h4>
+        <div class="tech-tags">
+         <span>APIs REST</span>
+         <span>Spring Security</span>
+         <span>JWT / RS256</span>
+         <span>Pydantic</span>
+         <span>BFF</span>
+         <span data-i18n="technologies.tags.microservices">Microservicios</span>
+         <span data-i18n="technologies.tags.testing">Testing</span>
+        </div>
+       </article>
+       <article class="tech-group">
+        <h4 data-i18n="technologies.groups.data">Datos e infraestructura</h4>
+        <div class="tech-tags">
+         <span>PostgreSQL</span>
+         <span>MySQL</span>
+         <span>MongoDB</span>
+         <span>Kafka</span>
+         <span>Docker</span>
+         <span>Linux</span>
+         <span>Git</span>
+         <span>AWS</span>
+        </div>
+       </article>
+       <article class="tech-group">
+        <h4 data-i18n="technologies.groups.complementary">Complementarias e IA aplicada</h4>
+        <div class="tech-tags">
+         <span>React</span>
+         <span>JavaScript</span>
+         <span>HTML</span>
+         <span>CSS</span>
+         <span>ECharts</span>
+         <span>Ollama</span>
+         <span data-i18n="technologies.tags.localModels">Modelos locales</span>
+         <span data-i18n="technologies.tags.aiApis">APIs de IA</span>
+        </div>
+       </article>
+      </div>
+     </div>
+     <div class="about-image" data-anim="right">
+      <img alt="Fabio Cuffaro trabajando con su ordenador" data-i18n-alt="technologies.profileImageAlt" decoding="async" height="825" loading="lazy" src="img/footer.jpg" width="1100"/>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!--
+  8. FOOTER — contacto, perfiles y currículum
+-->
+  <footer class="footer" data-anim="fade">
+   <p class="footer__line">
+    ©
+    <span id="year"></span>
+    Fabio Cuffaro ·
+    <a data-i18n="footer.email" href="mailto:fabiomcc96@gmail.com">Correo</a>
+    ·
+    <a href="https://github.com/FabioCuffaro" rel="noopener noreferrer" target="_blank">GitHub</a>
+    ·
+    <a href="https://www.linkedin.com/in/fabiomcc" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+    ·
+    <button aria-controls="cv-language-popover" aria-expanded="false" class="footer__cv-trigger cv-trigger" data-cv-trigger="" data-i18n="footer.cv" type="button">Currículum vitae</button>
+   </p>
+  </footer>
+  <!--
+  9. SELECTOR DE CURRÍCULUM — versiones ES, EN e IT
+-->
+  <div aria-describedby="cv-popover-description" aria-labelledby="cv-popover-title" class="cv-popover" hidden="" id="cv-language-popover" role="dialog">
+   <div class="cv-popover__header">
+    <div>
+     <h2 data-i18n="cv.selectorTitle" id="cv-popover-title">Descargar currículum</h2>
+     <p data-i18n="cv.selectorDescription" id="cv-popover-description">
+      Selecciona el idioma del documento.
+     </p>
+    </div>
+    <button aria-label="Cerrar selector de currículum" class="cv-popover__close" data-i18n-aria-label="cv.closeAria" type="button">
+     <span aria-hidden="true">×</span>
+    </button>
+   </div>
+   <div class="cv-popover__options">
+    <a aria-label="Descargar currículum en español" class="cv-language-option" data-cv-lang="es" data-i18n-aria-label="cv.downloadEsAria" download="Fabio_Cuffaro_CV_ES.pdf" href="docs/Fabio_Cuffaro_CV_ES.pdf">
+     <span class="cv-language-option__code">ES</span>
+     <span class="cv-language-option__name">Español</span>
+     <span class="cv-language-option__recommended" data-cv-recommended="" data-i18n="cv.recommended">Recomendado</span>
+    </a>
+    <a aria-label="Descargar currículum en inglés" class="cv-language-option" data-cv-lang="en" data-i18n-aria-label="cv.downloadEnAria" download="Fabio_Cuffaro_CV_EN.pdf" href="docs/Fabio_Cuffaro_CV_EN.pdf">
+     <span class="cv-language-option__code">EN</span>
+     <span class="cv-language-option__name">English</span>
+     <span class="cv-language-option__recommended" data-cv-recommended="" data-i18n="cv.recommended">Recomendado</span>
+    </a>
+    <a aria-label="Descargar currículum en italiano" class="cv-language-option" data-cv-lang="it" data-i18n-aria-label="cv.downloadItAria" download="Fabio_Cuffaro_CV_IT.pdf" href="docs/Fabio_Cuffaro_CV_IT.pdf">
+     <span class="cv-language-option__code">IT</span>
+     <span class="cv-language-option__name">Italiano</span>
+     <span class="cv-language-option__recommended" data-cv-recommended="" data-i18n="cv.recommended">Recomendado</span>
+    </a>
+   </div>
+  </div>
+  <!--
+  10. VOLVER ARRIBA Y CARGA DE JAVASCRIPT
+-->
+  <button aria-label="Volver al principio" class="btn-floating" data-i18n-aria-label="top.aria" data-i18n-title="top.title" id="topBtn" title="Volver arriba" type="button">
+   <img alt="" aria-hidden="true" class="btn-floating__img" height="512" src="img/608336.png" width="512"/>
+  </button>
+  <script src="script.js">
+  </script>
+ </body>
 </html>
