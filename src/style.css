@@ -829,7 +829,6 @@ body {
 .dark-mode .skills__stats i,
 .dark-mode .category-title h4,
 .dark-mode .career h5,
-.dark-mode .about__title,
 .dark-mode .tech i,
 .dark-mode .footer {
     color: #fff;
@@ -1615,6 +1614,7 @@ body {
 }
 
 /* 5.2 Tarjeta y contenido */
+
 .projects-card {
     position: relative;
     display: flex;
@@ -1628,14 +1628,19 @@ body {
     background: #fff;
     box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.19);
     transition:
-        transform 860ms cubic-bezier(0.16, 1, 0.3, 1),
-        box-shadow 860ms cubic-bezier(0.16, 1, 0.3, 1),
-        background-color 420ms ease;
+        opacity var(--motion-duration, 3550ms) var(--motion-easing),
+        translate var(--motion-duration, 2250ms) var(--motion-easing),
+        scale var(--motion-duration, 2250ms) var(--motion-easing),
+        filter var(--motion-filter-duration, 1500ms) var(--motion-easing),
+        transform 1.4s ease,
+        box-shadow 1.4s ease !important;
 }
 
 .projects-card:hover {
-    transform: translateY(-5px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+    transform: translateY(-10px);
     box-shadow: 7px 18px 28px rgba(0, 0, 0, 0.22);
+    z-index: 5;
 }
 
 .projects-card-image,
@@ -1769,9 +1774,11 @@ body {
 
 .projects-card > .btn {
     transition:
-        min-width 520ms cubic-bezier(0.16, 1, 0.3, 1),
-        background 420ms ease,
-        box-shadow 520ms ease;
+        min-width 2200ms ease-in-out,
+        background 1800ms ease,
+        box-shadow 2200ms ease,
+        color 1800ms ease,
+        border-color 1800ms ease;
 }
 
 .projects-card > .btn:hover {
@@ -1785,13 +1792,13 @@ body {
     font-weight: 600;
 }
 
-.project-status--animated {
-    transform-origin: right bottom;
+.projects-card > .btn {
     transition:
-        transform 620ms cubic-bezier(0.16, 1, 0.3, 1),
-        min-width 620ms cubic-bezier(0.16, 1, 0.3, 1),
-        background 480ms ease,
-        box-shadow 620ms ease;
+        min-width 2200ms ease-in-out,
+        background 1800ms ease,
+        box-shadow 2200ms ease,
+        color 1800ms ease,
+        border-color 1800ms ease;
 }
 
 .projects-card:hover .project-status--animated,
@@ -1867,6 +1874,20 @@ body {
     box-shadow: 0 8px 24px rgba(235, 235, 235, 0.18);
 }
 
+.dark-mode .projects-card > .btn {
+    background: #6b6b6b9c;
+    color: #fff;
+}
+
+.dark-mode .projects-card > .btn:hover {
+    color:#000000;
+    background: #e1e1e2;
+}
+
+.dark-mode .project-card-info h5 {
+    color: #fff;
+}
+
 .dark-mode .project-card-info h5 {
     color: #fff;
 }
@@ -1878,7 +1899,7 @@ body {
 .dark-mode .project-tech-list span,
 .dark-mode .tech-tags span {
     border-color: #4b5563;
-    background: #292929;
+    background: #444343;
     color: #e5e7eb;
 }
 
@@ -2144,7 +2165,7 @@ body {
     }
 
     .projects-card:hover {
-        transform: translateY(-2px);
+        transform: translateY(-10px);
     }
 
 }
@@ -2315,6 +2336,10 @@ body {
     flex-shrink: 0;
     color: #5e6670;
     font-size: 34px;
+}
+
+.dark-mode .career__recommendation > i {
+    color: #ffffff;
 }
 
 .career__recommendation h4 {
@@ -2641,18 +2666,23 @@ body {
 }
 
 .about__title {
-    width: 100%;
-    margin: 0 0 34px;
-    padding: 4px 18px;
-    color: #1f2a38;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 34px;
+    padding: 18px 26px;
+    border: 1px solid #d8dde4;
+    border-radius: 10px;
+    background: #e5e7eb;
+    color: #1f2937;
     font-size: 36px;
+    font-weight: 700;
     line-height: 1.15;
     text-align: center;
 }
 
-.about-text .about-text__intro {
+.about-text__intro {
     max-width: 860px;
-    margin-bottom: 24px;
+    margin: 0 auto 30px;
     color: #5e6670;
     font-size: 17px;
     line-height: 1.5;
@@ -2698,12 +2728,15 @@ body {
     box-shadow: 0 8px 20px rgba(31, 41, 55, 0.055);
     text-align: center;
     transition:
-        transform 620ms cubic-bezier(0.16, 1, 0.3, 1),
-        box-shadow 620ms cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1400ms cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 1400ms cubic-bezier(0.16, 1, 0.3, 1),
         background-color 420ms ease;
 }
 
 .tech-visual-item:hover {
+    transition:
+        transform 400ms cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 400ms cubic-bezier(0.16, 1, 0.3, 1);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(31, 41, 55, 0.12);
 }
@@ -2809,8 +2842,10 @@ body {
 }
 
 /* 7.4 Modo oscuro */
-.dark-mode .about {
-    background: #1e1e1e;
+.dark-mode .about__title {
+    border-color: #4b5563;
+    background: #d1d5db;
+    color: #0b1f3b;
 }
 
 .dark-mode .tech-group {
@@ -2842,11 +2877,18 @@ body {
     color: #e5e7eb;
 }
 
+.dark-mode .tech-visual-item__logo img[src$="postgresql.png"] {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.329));
+    background: rgba(255, 255, 255, 0.116);
+    border-radius: 6px;
+    padding: 2px;
+}
+
 /* 7.5 Responsive */
 @media screen and (max-width: 1400px) {
 
     .about__title {
-        font-size: 35px;
+        font-size: 32px;
     }
 
     .about-image img {
@@ -2988,14 +3030,14 @@ body {
     }
 
     .about__title {
-        margin-bottom: 27px;
-        padding: 3px 12px;
-        font-size: 32px;
-    }
+    margin-bottom: 27px;
+    padding: 12px 18px;
+    font-size: 26px;
+}
 
-    .about-text .about-text__intro {
-        font-size: 16px;
-    }
+  .about-text__intro {
+    font-size: 16px;
+}
 
     .tech-groups {
         grid-template-columns: 1fr;
@@ -3496,24 +3538,24 @@ body {
    ========================================================================== */
 
 :root {
-    --motion-duration: 2100ms;
+    --motion-duration: 3000ms;
     --motion-distance: 46px;
     --motion-blur: 6px;
-    --motion-filter-duration: 1900ms;
+    --motion-filter-duration: 3000ms;
     --motion-easing: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero [data-anim] {
-    --motion-duration: 2250ms;
-    --motion-distance: 58px;
-    --motion-filter-duration: 1900ms;
+    --motion-duration: 4200ms;
+    --motion-distance: 70px;
+    --motion-filter-duration: 4200ms;
 }
 
 .category-projects [data-anim],
 .skills__stats [data-anim],
 .tech-visual-strip [data-anim],
 .tech-groups [data-anim] {
-    --motion-duration: 2250ms;
+    --motion-duration: 3350ms;
 }
 
 .skills__stats > .skill-icon[data-anim] {
@@ -3576,7 +3618,8 @@ body {
         opacity var(--motion-duration, 2250ms) var(--motion-easing),
         translate var(--motion-duration, 2250ms) var(--motion-easing),
         scale var(--motion-duration, 2250ms) var(--motion-easing),
-        filter var(--motion-filter-duration, 1900ms) var(--motion-easing);
+        filter var(--motion-filter-duration, 1900ms) var(--motion-easing),
+        transform 0.3s ease;
     transition-delay: var(--motion-delay, 0ms);
 }
 
